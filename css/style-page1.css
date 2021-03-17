@@ -40,11 +40,11 @@ header nav a {
   text-transform: uppercase;
 }
 header nav a:hover {
-  transform: translateY(-3px);
-  background-color: #b3e5fc;
+  transform: translateY(-1px);
 }
 header nav a:active {
-  transform: translateY(0);
+  transform: translateY(3px);
+  background-color: #b3e5fc;
 }
 
 #main-article {
@@ -70,17 +70,16 @@ header nav a:active {
 }
 #main-article #main-text button {
   font-weight: 800;
-  background-color: #FEEF0C;
+  background-image: linear-gradient(#FFFF14, #FEDE00);
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
 }
 #main-article #main-text button:hover {
   background-color: #FCDE04;
-  transform: translateY(-3px);
 }
 #main-article #main-text button:active {
-  transform: translateY(0);
+  transform: translateY(3px);
 }
 
 #products {

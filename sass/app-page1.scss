@@ -27,11 +27,11 @@ header {
       color: white;
       text-transform: uppercase;
       &:hover {
-        transform: translateY(-3px);
-        background-color: #b3e5fc;
+        transform: translateY(-1px);
       }
       &:active {
-        transform: translateY(0);
+        transform: translateY(3px);
+        background-color: #b3e5fc;
       }
     }
   }
@@ -58,16 +58,15 @@ header {
     }
     & button {
       font-weight: 800;
-      background-color: #FEEF0C;
+      background-image: linear-gradient(#FFFF14, #FEDE00);
       padding: 10px 20px;
       border-radius: 20px;
       border: none;
       &:hover {
         background-color: #FCDE04;
-        transform: translateY(-3px);
       }
       &:active {
-        transform: translateY(0);
+        transform: translateY(3px);
       }
     }
   }
