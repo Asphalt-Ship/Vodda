@@ -96,6 +96,7 @@ header nav a:active {
   align-items: center;
   justify-self: center;
   padding: 20px 10px;
+  margin-bottom: 30px;
 }
 #products .chevron-align {
   display: flex;
@@ -106,6 +107,13 @@ header nav a:active {
 }
 #products .chevron-align span {
   font-weight: 900;
+}
+#products .product-fluff-wrapper {
+  height: 30px;
+  width: 175px;
+}
+#products .product-fluff-wrapper p {
+  margin: 10px 0 10px 40px;
 }
 
 #reviews {
