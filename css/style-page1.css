@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100;1,300;1,900&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1 1 auto;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  margin: 40px 0;
+}
+header nav {
+  background-image: linear-gradient(#29b6f6, #0277bd);
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  flex-flow: row nowrap;
+}
+header nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+header nav a:hover {
+  transform: translateY(-3px);
+  background-color: #b3e5fc;
+}
+header nav a:active {
+  transform: translateY(0);
+}
+
+#main-article {
+  background-image: linear-gradient(145deg, #289CF1, #1ECFF8);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#main-article #main-text {
+  margin-left: 50px;
+  width: 27vw;
+}
+#main-article #main-text h2 {
+  font-size: 3.5rem;
+  line-height: 0.75;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+}
+#main-article #main-text p {
+  margin-bottom: 25px;
+}
+#main-article #main-text button {
+  font-weight: 800;
+  background-color: #FEEF0C;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+#main-article #main-text button:hover {
+  background-color: #FCDE04;
+  transform: translateY(-3px);
+}
+#main-article #main-text button:active {
+  transform: translateY(0);
+}
+
+#products {
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+#products .product-wrapper {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-self: center;
+  margin: 10px;
+  border: 1px solid rgba(211, 211, 211, 0.5);
+}
+#products .chevron-align {
+  display: flex;
+  align-items: center;
+}
+#products .chevron-align img {
+  margin-right: 10px;
+}
+
+#reviews {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#reviews h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+}
+#reviews a {
+  color: #27ABEB;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #DBE9F4;
+}
+
+#clients {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+#clients .client-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+}
+#clients .client-wrapper .client-pic {
+  margin: 10px;
+}
+#clients .client-wrapper .client-name {
+  font-weight: bold;
+  margin: 10px 0;
+}
+#clients .client-wrapper .client-fluff {
+  margin: 10px 0 20px 0;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid rgba(211, 211, 211, 0.5);
+}
+footer ul {
+  list-style: none;
+}
+footer #joinus {
+  text-align: center;
+}
+footer #joinus p {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+footer #joinus img {
+  margin: 0 2px;
+}
+
+/*# sourceMappingURL=style-page1.css.map */
