@@ -1,0 +1,95 @@
+@import "base";
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1 1 auto;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  & h1 {;
+    margin: 40px 0;
+  }
+  & nav {
+    background-image: linear-gradient(#29b6f6, #0277bd);
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex-flow: row nowrap;
+    & a {
+      padding: 1rem;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      &:hover {
+        transform: translateY(-1px);
+      }
+      &:active {
+        transform: translateY(3px);
+        background-color: #b3e5fc;
+      }
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid rgba(211, 211, 211, 0.5);
+  & ul {
+    list-style: none;
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  & #joinus {
+    text-align: center;
+    & p {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    & img {
+      margin: 0 2px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1205px) {
+  header {
+    & nav {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 0;
+      & a {
+        text-align: left;
+        margin-left: 30%;
+        padding: 0.2rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 560px) {
+  footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    text-align: center;
+    & h3 {
+      margin-top: 10px
+    }
+    & div {
+      margin-top: 10px;
+    }
+  }
+}
