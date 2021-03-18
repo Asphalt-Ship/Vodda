@@ -74,6 +74,7 @@ header nav a:active {
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
+  box-shadow: 5px 5px 5px #333;
 }
 #main-article #main-text button:hover {
   background-color: #FCDE04;
@@ -87,8 +88,8 @@ header nav a:active {
 }
 #products table {
   width: 100vw;
+  border: 1px solid rgba(211, 211, 211, 0.5);
   border-collapse: collapse;
-  border-color: rgba(211, 211, 211, 0.5);
 }
 #products .product-wrapper {
   display: flex;
@@ -179,6 +180,83 @@ footer #joinus p {
 }
 footer #joinus img {
   margin: 0 2px;
+}
+
+@media only screen and (max-width: 1205px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  header nav a {
+    text-align: left;
+    margin-left: 30%;
+    padding: 0.2rem;
+  }
+}
+@media only screen and (max-width: 890px) {
+  #main-article {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-article #main-text {
+    margin: 30px 0;
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 785px) {
+  #products table tr td {
+    display: block;
+  }
+  #products table {
+    width: 300px;
+  }
+  #products table td {
+    box-shadow: 5px 5px 5px #333;
+    margin: 3px;
+  }
+
+  #clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #clients .client-wrapper {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    text-align: center;
+  }
+  footer h3 {
+    margin-top: 10px;
+  }
+  footer div {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #reviews {
+    margin-top: 20px;
+  }
+  #reviews h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 325px) {
+  #main-article #main-image img {
+    width: 90vw;
+  }
+
+  #products table td {
+    width: 90vw;
+  }
 }
 
 /*# sourceMappingURL=style-page1.css.map */
