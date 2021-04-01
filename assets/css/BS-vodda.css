@@ -31,6 +31,10 @@ body, body::before, body::after {
   transform: translateY(1px);
 }
 
+.secondary-items-list a {
+  color: #444 !important;
+}
+
 .h2 {
   font-family: "Poppins", sans-serif;
 }

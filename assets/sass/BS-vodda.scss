@@ -34,6 +34,12 @@ body, body::before, body::after {
     }
 }
 
+.secondary-items-list {
+    & a {
+        color: #444 !important;
+    }
+}
+
 .h2 {
     font-family: 'Poppins', sans-serif;
 }
