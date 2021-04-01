@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100;1,300;1,900&family=Poppins:wght@700&display=swap');
+
+body, body::before, body::after {
+    font-family: 'Lato', sans-serif;
+    color: #444;
+}
+
+.nav {
+    background-image: linear-gradient(#29b6f6, #0277bd);
+    & li {
+        & a {
+            padding: 10px;
+            &:hover {
+                background-color: #1ECFF8;
+            }
+        }
+    }
+}
+
+.main-article-wrapper {
+    background-image: linear-gradient(145deg, #289CF1, #1ECFF8);
+    & .h1 {
+        font-family: 'Poppins', sans-serif;
+        line-height: 0.8;
+    }
+    & button {
+        background-image: linear-gradient(#FFFF14, #FEDE00) !important;
+        &:hover {
+            transform: translateY(-1px);
+        }
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+}
+
+.h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.reviews {
+    & a {
+        border-bottom: 1px solid lightblue;
+    }
+}
+
+.footer {
+    & a {
+        color: #444 !important;
+    }
+}
